@@ -1,0 +1,4 @@
+<view class="comment">
+  <textarea placeholder="在这里输入你的祝福语,100字以内" class="textarea" bindinput="inputSuccess"></textarea>
+  <button class="save_btn" open-type="getUserInfo" bindgetuserinfo="clickSave">提交</button>
+</view>

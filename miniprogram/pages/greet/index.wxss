@@ -1,0 +1,105 @@
+/* miniprogram/pages/greet/index.wxss */
+.greet{
+  background: #fad3dc;
+  background-image: linear-gradient(#fad3dc,#FF2683);
+  padding: 0 20rpx 20rpx;
+  min-height: 100%;
+}
+.top_img{
+  width: 100%;
+  height: 180rpx;
+}
+.comment_li{
+  width: 100%;
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+  position: relative;
+}
+.head_img{
+  float: left;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+.right_area{
+  float: right;
+  width: 550rpx;
+}
+.nick_name{
+  display: inline-block;
+  width: 300rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.time{
+  display: inline-block;
+  width: 250rpx;
+  text-align: right;
+  font-size: 24rpx;
+  color: #707070;
+}
+.info_content{
+  color: #333;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  word-break: break-all;
+  line-height: 36rpx;
+}
+.del_btn{
+  position: absolute;
+  right: 15rpx;
+  bottom: 15rpx;
+  width: 100rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  padding: 0;
+  background: #FF2683;
+  color: #fff;
+}
+.show_more{
+  text-align: center;
+  display: block;
+  font-size: 24rpx;
+  color: #fff;
+  line-height: 50rpx;
+  margin-top: 14rpx;
+}
+.null{
+  color: #FF2683;
+  line-height: 400rpx;
+  text-align: center;
+}
+.fix_block{
+  position: fixed;
+  width: 200rpx;
+  height: 200rpx;
+  bottom: 40rpx;
+  z-index: 1;
+  right: 0rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  opacity: 0.8;
+  border: 2rpx solid #fad3dc;
+  overflow: hidden;
+}
+.fix_icon{
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: -15rpx;
+}
+.fix_tip{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  text-align: center;
+  color: #FF2683;
+  font-size: 24rpx;
+  font-weight: bold;
+}

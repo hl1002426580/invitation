@@ -1,0 +1,20 @@
+<view class="full">
+  <image mode="aspectFit" class="head-img" src="../../images/t1.png"/>
+  <view class="map_view">
+    <map id="map" class="map" subkey="wx2d53c3f17b1e4ed8" longitude="111.115175" latitude="37.512789" scale="14" markers="{{markers}}" data-markers="{{markers}}" bindmarkertap='gotohere' show-location/>
+  </view>
+  
+  <view class="call">
+      <view class="left" bindtap="linkHe">
+          <view class="name">Mr.韩</view>
+          <image class="icon" src="../../images/he.png"/>
+          <view class="span">呼叫新郎</view>
+      </view>
+      <view class="right" bindtap="linkShe">
+          <view class="name">Miss.张</view>
+          <image class="icon" src="../../images/she.png"/>
+          <view class="span">呼叫新娘</view>
+      </view>
+  </view>
+  <image class="footer" src="../../images/grren-flower-line.png"/>
+</view>

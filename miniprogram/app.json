@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/photo/index",
+    "pages/map/index",
+    "pages/greet/index",
+    "pages/comment/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#FF2683",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "邀请函",
+        "iconPath": "images/1-1.png",
+        "selectedIconPath": "images/1-2.png"
+      },
+      {
+        "pagePath": "pages/photo/index",
+        "text": "甜蜜档案",
+        "iconPath": "images/2-1.png",
+        "selectedIconPath": "images/2-2.png"
+      },
+      {
+        "pagePath": "pages/map/index",
+        "text": "导航",
+        "iconPath": "images/3-1.png",
+        "selectedIconPath": "images/3-2.png"
+      },
+      {
+        "pagePath": "pages/greet/index",
+        "text": "送上祝福",
+        "iconPath": "images/4-1.png",
+        "selectedIconPath": "images/4-2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ]
+}

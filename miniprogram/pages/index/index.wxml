@@ -1,0 +1,32 @@
+<view wx:if="{{music_url}}">
+  <view>
+    <!-- <view class="background_music {{isPlayingMusic?'playing':''}}" bindtap="play"></view> -->
+    <image mode="scaleToFill" src="../../images/music.png"   class="background_music {{isPlayingMusic?'playing':''}}" bindtap="play"></image>
+  </view>
+</view>
+<view class="index">
+  <view class="bg-swiper">
+    <swiper autoplay="{{true}}" circular="{{true}}" vertical="{{true}}">
+      <block wx:for="{{swiperList}}" wx:key="url">
+        <swiper-item class="item">
+          <image lazy-load="true" src="{{item.url}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="wel_text" wx:if="{{showText}}">
+    <view class="wel_span">亲爱的</view>
+    <view class="user_nickname"><open-data type="userNickName" ></open-data></view>
+    <view class="wel_span">，诚邀你(您)参加我们的婚礼！</view>
+  </view>
+  <view class="info">
+    <view class="content">
+      <h1>XXX & XXX</h1>
+      <p>谨定于 2020年x月x日 （星期x）中午12:00</p>
+      <p>农历 x月xxx 中午十二点整 举办婚礼</p>
+      <p>席设：xx酒店</p>
+      <p>地址：xx市xx区xx路xx号</p>
+      <image src="../../images/we.png" class="img_footer"/>
+    </view>
+  </view>
+</view>

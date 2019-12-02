@@ -1,0 +1,118 @@
+/* miniprogram/pages/photo/index.wxss */
+.index{
+  position: absolute;
+  left: 0;
+  top:0;
+  right: 0;
+  bottom: 0;
+}
+swiper{
+  height: 100%;
+  width: 100%;
+  
+}
+swiper-item{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.slide-image{
+  height: 100%;
+  width: 100%;
+}
+.sweet{
+  position: absolute;
+  font-size: 36rpx;
+  color: #000;
+  height: 45rpx;
+  overflow: hidden;
+}
+.sweet_1{
+  left: 10%;
+  top: 45%;
+  animation: sweetAnimation1 5s 1;
+}
+.sweet_2{
+  left: 60%;
+  bottom: 45%;
+  animation: sweetAnimation2 10s 1;
+}
+.good_bg{
+  position: fixed;
+  background: #fff;
+  opacity: 0.8;
+  width: 90rpx;
+  height: 110rpx;
+  top: 40rpx;
+  right: 40rpx;
+  border-radius: 6rpx;
+}
+.good_icon{
+  position: fixed;
+  width: 70rpx;
+  height: 70rpx;
+  right: 50rpx;
+  top: 45rpx;
+}
+.normal_num{
+  position: fixed;
+  color: #333;
+  right: 40rpx;
+  top: 110rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  width: 90rpx;
+  line-height: 34rpx;
+  text-align: center;
+}
+.like_num{
+  color:#FF2683;
+}
+.tap_here{
+  animation: likeAnimation 1s linear infinite;
+}
+@-webkit-keyframes sweetAnimation1 {
+  0% {
+    opacity: 0;
+    width: 0;
+  }    
+  10%{
+    opacity: 0;
+    width: 0;
+  }    
+  100% {
+    opacity: 1;
+    width: 50%;
+  }   
+}
+@-webkit-keyframes sweetAnimation2 {
+  0% {
+    opacity: 0;
+    width: 0;
+  }    
+  35%{
+    opacity: 0;
+    width: 0;
+  }    
+  100% {
+    opacity: 1;
+    width: 40%;
+  }   
+}
+@-webkit-keyframes likeAnimation {
+  0%{
+    width: 70rpx;
+    height:70rpx;
+  }
+  50%{
+    width: 64rpx;
+    height: 64rpx;
+    right: 53rpx;
+  }
+  100%{
+    width:70rpx;
+    height:70rpx;
+  }
+}

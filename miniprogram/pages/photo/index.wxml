@@ -1,0 +1,16 @@
+<view class="index">
+  <swiper autoplay="{{false}}" indicator-dots="{{true}}" circular="{{true}}" vertical="{{true}}" indicator-color="#FF93AC" indicator-active-color="#FF2683">
+    <block wx:for="{{photoList}}" wx:key="*this">
+      <swiper-item>
+        <image lazy-load="true" mode="aspectFit" src="{{item.url}}" class="slide-image" bindtap="preview" data-index="{{index}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+<!--   <view class="sweet sweet_1" wx:if="{{showText}}">我把前半生写在纸上</view>
+  <view class="sweet sweet_2" wx:if="{{showText}}">余生请多指教</view> -->
+</view>
+<view class="good_bg"></view>
+<image mode="scaleToFill" wx:if="{{!liked}}" src="../../images/favorites.png" class="good_icon  tap_here" bindtap="setLikeStatus"/>
+<image mode="scaleToFill" wx:if="{{liked}}" src="../../images/favorites-fill.png" class="good_icon" bindtap="setLikeStatus"/>
+<text class="normal_num" wx:if="{{!liked}}">{{likeNum}}</text>
+<text class="normal_num like_num" wx:if="{{liked}}">{{likeNum}}</text>

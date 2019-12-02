@@ -1,0 +1,185 @@
+.index{
+  height:100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom:0;
+}
+.wel_text{
+  position: absolute;
+  left:0rpx;
+  right:0rpx;
+  top:20rpx;
+  text-align: center;
+  color: #fff;
+  animation: welTextAnimation 2s ease-out 0s 1;
+}
+.wel_span{
+  display: inline-block;
+  font-size: 30rpx;
+}
+.user_nickname{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 36rpx;
+}
+.background_music {
+  position: fixed;
+  top: 70rpx;
+  right: 30rpx;
+  z-index: 1;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background: #fff;
+  border: 4rpx solid #fff;
+}
+.playing{
+  animation: musicPlaying 1.2s linear infinite;
+}
+.musicImg {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.music_icon {
+  animation: musicRotate 3s linear infinite;
+}
+
+.music_play {
+  width: 38rpx;
+  height: 80rpx;
+  margin-left: -5px;
+  transform-origin: top;
+  -webkit-transform: rotate(20deg);
+}
+
+.playImg {
+  animation: musicStop 1s linear forwards;
+}
+
+.pauseImg {
+  animation: musicStart 1s linear forwards;
+}
+
+.info{
+  width: 630rpx;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 1;
+  position: fixed;
+  bottom: 40rpx;
+  left: 50rpx;
+  padding: 10rpx;
+  animation: infoAnimation 9s linear infinite;
+}
+.content{
+  width: 610rpx;
+  border: 1rpx solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding-bottom: 30rpx;
+}
+h1{
+  font-size: 50rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+        
+p{
+  font-size: 24rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+  
+.img_footer{
+  position: absolute;
+  bottom: 0;
+  left: 53rpx;
+  z-index: 99;
+  height: 14rpx;
+  width: 520rpx;
+}
+.bg-swiper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+swiper{
+  width: 100%;
+  height:100%;
+}      
+.slide-image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@-webkit-keyframes musicRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes musicStop {
+  from {
+    -webkit-transform: rotate(20deg);
+  }
+
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes musicStart {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(20deg);
+  }
+}
+
+@-webkit-keyframes musicPlaying {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes infoAnimation {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+  }    
+  50%{
+    -webkit-transform: scale(.88) translate(5px, 5px);
+  }    
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+  }   
+}
+
+@-webkit-keyframes welTextAnimation {
+  0%{
+    left: -750rpx;
+    opacity: 0;
+  }
+  50%{
+    left: -750rpx;
+    opacity: 0;
+  }
+  100%{
+    left:0rpx;
+    opacity: 1;
+  }
+}

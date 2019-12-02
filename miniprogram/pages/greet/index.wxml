@@ -1,0 +1,27 @@
+<view class="greet" wx:if="{{commentList.length}}">
+  <image src="../../images/timg.jpg" mode="scaleToFill" class="top_img"></image>
+  <block wx:for="{{commentList}}" wx:key="_id">
+    <view class="comment_li" data-index="{{index}}" bindlongpress="showDelBtn">
+      <image class="head_img" src="{{item.img}}"/>
+      <view class="right_area">
+        <view class="info_li">
+          <view class="nick_name">{{item.nickName}}</view>
+          <view class="time">{{item.createTime}}</view>
+        </view>
+        <view class="info_content">
+          {{item.content}}
+        </view>
+        <button class="del_btn" wx:if="{{pressIndex == index && allowDel}}" bindtap="delComment">删除</button>
+      </view>
+    </view>
+  </block>
+  <text wx:if="{{canScroll&&commentList.length>pageSize}}" class="show_more">上拉加载更多...</text>
+  <text wx:if="{{!canScroll}}" class="show_more">已全部加载</text>
+</view>
+<view wx:if="{{!commentList.length&&!pageLoading}}" class="null">
+  还没有祝福语，快来送上祝福语！
+</view>
+<view class="fix_block" bindtap="gotoComment">
+  <image src="../../images/5-2.png" mode="scaleToFill" class="fix_icon"></image>
+  <text class="fix_tip">发表祝福</text>
+</view>
