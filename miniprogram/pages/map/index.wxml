@@ -1,7 +1,7 @@
 <view class="full">
   <image mode="aspectFit" class="head-img" src="../../images/t1.png"/>
   <view class="map_view">
-    <map id="map" class="map" subkey="wx2d53c3f17b1e4ed8" longitude="111.115175" latitude="37.512789" scale="14" markers="{{markers}}" data-markers="{{markers}}" bindmarkertap='gotohere' show-location/>
+    <map id="map" class="map" subkey="wx2d53c3f17b1e4ed8" longitude="111.129695" latitude="37.507225" scale="14" markers="{{markers}}" data-markers="{{markers}}" bindmarkertap='gotohere' show-location/>
   </view>
   
   <view class="call">

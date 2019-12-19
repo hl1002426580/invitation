@@ -156,9 +156,9 @@ Page({
    */
   onShareAppMessage: function () {
     return {
-      title: 'XXX & XXX 的婚礼邀请',
+      title: '韩磊 & 张婷婷 的婚礼邀请',
       path: '/pages/index/index',
-      imageUrl: '../../images/share.png'
+      imageUrl: '../../images/share.jpg'
     }
   }
 })

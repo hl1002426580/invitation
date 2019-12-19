@@ -6,10 +6,10 @@
 </view>
 <view class="index">
   <view class="bg-swiper">
-    <swiper autoplay="{{true}}" circular="{{true}}" vertical="{{true}}">
+    <swiper autoplay="{{false}}" circular="{{false}}" vertical="{{true}}">
       <block wx:for="{{swiperList}}" wx:key="url">
         <swiper-item class="item">
-          <image lazy-load="true" src="{{item.url}}" class="slide-image"/>
+          <image lazy-load="true" mode="aspectFill" src="{{item.url}}" class="slide-image"/>
         </swiper-item>
       </block>
     </swiper>
@@ -21,11 +21,11 @@
   </view>
   <view class="info">
     <view class="content">
-      <h1>XXX & XXX</h1>
-      <p>谨定于 2020年x月x日 （星期x）中午12:00</p>
-      <p>农历 x月xxx 中午十二点整 举办婚礼</p>
-      <p>席设：xx酒店</p>
-      <p>地址：xx市xx区xx路xx号</p>
+      <h1>韩磊 & 张婷婷</h1>
+      <p>谨定于 2020年5月15日 （星期五）15:00</p>
+      <p>农历 四月廿三 下午三点整 举办婚礼</p>
+      <p>席设：龙凤宴酒店</p>
+      <p>地址：吕梁市离石区龙凤南大街124号</p>
       <image src="../../images/we.png" class="img_footer"/>
     </view>
   </view>

@@ -1,5 +1,5 @@
 <view class="index">
-  <swiper autoplay="{{false}}" indicator-dots="{{true}}" circular="{{true}}" vertical="{{true}}" indicator-color="#FF93AC" indicator-active-color="#FF2683">
+  <swiper autoplay="{{true}}" indicator-dots="{{true}}" circular="{{true}}" vertical="{{true}}" indicator-color="#FF93AC" indicator-active-color="#FF2683">
     <block wx:for="{{photoList}}" wx:key="*this">
       <swiper-item>
         <image lazy-load="true" mode="aspectFit" src="{{item.url}}" class="slide-image" bindtap="preview" data-index="{{index}}"/>
