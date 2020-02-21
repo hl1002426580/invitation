@@ -7,20 +7,20 @@ Page({
   data: {
     markers: [{
       id: 0,
-      latitude: 37.512789,
-      longitude: 111.115175,
+      latitude: 37.507225,
+      longitude: 111.129695,
       width: '60rpx',
       height: '60rpx',
       iconPath: '../../images/address.png',
       label: {
-        content: 'xx大酒店',
+        content: '龙凤宴酒店',
         fontSize: 14,
         padding: 5,
         borderRadius: 5,
         textAlign: 'center',
         color: '#333',
         bgColor: '#fff',
-        anchorX: -30,
+        anchorX: -45,
         anchorY: -60
       },
       alpha: 0.9
@@ -108,9 +108,9 @@ Page({
    */
   onShareAppMessage: function () {
     return {
-      title: 'XXX & XXX 的婚礼邀请',
+      title: '韩磊 & 张婷婷 的婚礼邀请',
       path: '/pages/index/index',
-      imageUrl: '../../images/share.png'
+      imageUrl: '../../images/share.jpg'
     }
   }
 })
